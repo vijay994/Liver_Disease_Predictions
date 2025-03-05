@@ -40,8 +40,7 @@ This project is a **Liver Disease Prediction System** built using machine learni
 - The model will predict whether liver disease is present or not.
 - The result page will show the prediction along with the model used.
 
-## 📸 Screenshots
-(Add images of your web app interface later)
+
 
 ##  Future Scope
 - Add more advanced models like XGBoost, LightGBM.
