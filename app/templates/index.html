@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Liver Disease Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            padding: 50px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            border-radius: 10px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Liver Disease Prediction Form</h2>
+    <form method="POST" action="/">
+        <label>Age:</label>
+        <input type="number" name="Age" required>
+
+        <label>Gender:</label>
+        <select name="Gender" required>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+
+        <label>Total Bilirubin:</label>
+        <input type="number" step="any" name="Total_Bilirubin" required>
+
+        <label>Direct Bilirubin:</label>
+        <input type="number" step="any" name="Direct_Bilirubin" required>
+
+        <label>Alkaline Phosphotase:</label>
+        <input type="number" name="Alkaline_Phosphotase" required>
+
+        <label>Alamine Aminotransferase:</label>
+        <input type="number" name="Alamine_Aminotransferase" required>
+
+        <label>Aspartate Aminotransferase:</label>
+        <input type="number" name="Aspartate_Aminotransferase" required>
+
+        <label>Total Proteins:</label>
+        <input type="number" step="any" name="Total_Protiens" required>
+
+        <label>Albumin:</label>
+        <input type="number" step="any" name="Albumin" required>
+
+        <label>Albumin and Globulin Ratio:</label>
+        <input type="number" step="any" name="Albumin_and_Globulin_Ratio" required>
+
+        <button type="submit">Predict</button>
+    </form>
+</div>
+
+</body>
+</html>
